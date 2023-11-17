@@ -1,33 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-            </ul>
-
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg w-100 fixed-top fs-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/sukacode.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          SUKACODE
+        </a>        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</body>
+
+    <main>
+      <section class="home" id="home">
+        <div class="wrap-text">
+          <div class="text">
+            <h1>Solusi Aplikasi Profesional dan Komunitas Coding Terbuka</h1>
+            <p>Sukacode merupakan sebuah Startup dan komunitas terbuka yang bertujuan untuk memberikan solusi digital berupa aplikasi profesional web dan mobile kepada perusahaan atau personal.</p>
+          </div>
+        </div>
+        <img src="img/hero.png" alt="header-jpg" />
+      </section>
+      <hr />
+
+      <section class="service" id="service">
+        <h1>Solusi Apa Yang Bisa Kami Berikan</h1>
+        <div class="row">
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/computer.png" alt="computer" class="img" />
+                <h3 class="card-title">Landing Page</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> selengkapnya </a>
+                <div class="collapse" id="collapse1">
+                  <p class="card-text">Selain Tech Solution, Sukacode juga menyediakan sebuah komunitas terbuka untuk belajar programming secara gratis</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/store.svg" alt="store" class="img" />
+                <h3 class="card-title">Digital Marketing</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"> selengkapnya </a>
+                <div class="collapse" id="collapse2">
+                  <p class="card-text">Membantu memperkenalkan dan memasarkan produk dengan menggunakan semua media digital</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/smartphone.png" alt="store" class="img" />
+                <h3 class="card-title">Android Developer</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3"> selengkapnya </a>
+                <div class="collapse" id="collapse3">
+                  <p class="card-text">Buat aplikasi berbasis mobile dengan teknologi terbaru yang dapat berjalan di platform Android dan IOS</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/web.png" alt="computer" class="img" />
+                <h3 class="card-title">Web Developer</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> selengkapnya </a>
+                <div class="collapse" id="collapse4">
+                  <p class="card-text">Buat web application profesional dengan kompleksitas tinggi dan menggunakan teknologi terbaru dengan harga murah</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/community.png" alt="store" class="img" />
+                <h3 class="card-title">Coding Comunity</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> selengkapnya </a>
+                <div class="collapse" id="collapse5">
+                  <p class="card-text">Sukacode juga menyediakan sebuah komunitas terbuka untuk belajar programming secara gratis</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+              <div class="card-body">
+                <img src="img/consultant.png" alt="store" class="img" />
+                <h3 class="card-title">IT Consultant</h3>
+                <a data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> selengkapnya </a>
+                <div class="collapse" id="collapse6">
+                  <p class="card-text">Konsultasi masalah atau inovasi mengenai Teknologi Informasi dengan Tim Profesional kami</p>
+                </div>
+                <span>
+                  <img src="img/chevron-right-solid.svg" width="15px" height="15px" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="product" class="product">
+        <h1>Our Product</h1>
+        <div class="row">
+          <div class="col-sm-6 mt-5">
+            <div class="card sizing">
+              <img src="img/testing1.jpg" alt="project-img" class="card-img-top" />
+              <div class="card-footer">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">Selengkapnya</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-5">
+            <div class="card sizing">
+              <img src="img/testing2.jpg" alt="project-img" class="card-img-top" />
+              <div class="card-footer">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">Selengkapnya</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Web E-Milk</h1>
+              </div>
+              <div class="modal-body">Web E-Milk adalah web yang digunakan untuk melakukan penjualan bisnis ruangg lingkup satu kota saja, yaitu menjual susu sapi segar dari pertenakan</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Money-Calc</h1>
+              </div>
+              <div class="modal-body">Money-Calc adalah aplikasi android yang didesain dan dikembangkan untuk keperluan pencatatan keuangan suatu toko.</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <!-- <footer class="footers" id="contact">
+      <div class="team">
+        <div class="logo">
+         <a href="">
+          <img id="imek" width="100px" height="80px" src="img/instagram.png" alt="" srcset="">
+         </a>
+        </div>
+        <div class="nama">
+          <label id="kon" for="imek">@furrun_</label>
+          
+        </div>
+        </div>
+    </footer> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
